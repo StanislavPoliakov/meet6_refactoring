@@ -4,5 +4,4 @@ public interface ActivityCallback {
     void buttonPressed();
 
     void setText(String message);
-
 }

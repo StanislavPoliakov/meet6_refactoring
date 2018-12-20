@@ -12,17 +12,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
-public class Fragment_2 extends Fragment {
+public class Fragment2 extends Fragment {
     private final String LOG_TAG = "meet6_logs";
     private ActivityCallback mCallback;
-
-    public Fragment_2() {
-        // Required empty public constructor
-    }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -44,7 +36,7 @@ public class Fragment_2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_2, container, false);
+        return inflater.inflate(R.layout.fragment2, container, false);
     }
 
     @Override
@@ -54,7 +46,7 @@ public class Fragment_2 extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(LOG_TAG, "Button clicked");
+                //Log.d(LOG_TAG, "Button clicked");
                 mCallback.buttonPressed();
             }
         });

@@ -14,18 +14,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
-public class Fragment_1 extends Fragment {
+public class Fragment1 extends Fragment {
     private BroadcastReceiver broadcastReceiver;
     private IntentFilter intentFilter;
     private ActivityCallback mCallback;
-
-    public Fragment_1() {
-        // Required empty public constructor
-    }
 
     @Override
     public void onAttach(Context context) {
@@ -67,7 +59,7 @@ public class Fragment_1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_1, container, false);
+        return inflater.inflate(R.layout.fragment1, container, false);
     }
 
     @Override
